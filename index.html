@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wheel Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1><center>Wheel Game</center></h1>
+    <canvas id="wheelCanvas" width="400" height="400"></canvas>
+    <div id="betButtons">
+      <button class="betButton" onclick="placeBet(0)">🦁 (5x)</button>
+      <button class="betButton" onclick="placeBet(1)">🐯 (5x)</button>
+      <button class="betButton" onclick="placeBet(2)">🐻 (5x)</button>
+      <button class="betButton" onclick="placeBet(3)">🐵 (5x)</button>
+      <button class="betButton" onclick="placeBet(4)">🐘 (10x)</button>
+      <button class="betButton" onclick="placeBet(5)">🦒 (15x)</button>
+      <button class="betButton" onclick="placeBet(6)">🦓 (25x)</button>
+      <button class="betButton" onclick="placeBet(7)">🦌 (50x)</button>
+    </div>
+    
+    <div id="credit">Credits: 1000</div>
+    <div id="timers">
+      <div id="betTimer">Betting Time: <span id="betTimerValue">30</span> seconds</div>
+      <div id="gameTimer">Game Time: <span id="gameTimerValue">2</span> seconds</div>
+    </div>
+    <br>
+    <label for="betAmount"><center>Bet Amount:</label>
+    <input type="number" id="betAmount" min="1" value="1">
+    <button onclick="enableBet()">Enable</button>
+    </center>
+    <div id="result"></div>
+    <div id="results">
+      <h2>Last 10 Results</h2>
+      <ul id="resultsList"></ul>
+    </div>
+  </div>
+  <audio id="spinSound" src="spin.mp3"></audio>
+  <audio id="betSound" src="chip.mp3"></audio>
+  <audio id="winSound" src="result.mp3"></audio>
+  <audio id="loseSound" src="lose.mp3"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

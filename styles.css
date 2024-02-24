@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+  background-color: #f8f9fa; /* Light gray background */
+  background-image: linear-gradient(to bottom right, #f8f9fa, #e9ecef, #dee2e6, #ced4da); /* Gradient from light gray to lighter shades */
+  font-family: Arial, sans-serif; /* Use Arial font with fallback to sans-serif */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto; /* Center the container with some top margin */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  background-color: #fff; /* White background */
+}
+
+/* Canvas Styles */
+canvas {
+  display: block;
+  margin: 20px auto; /* Center the canvas with some margin */
+  border: 4px solid #343a40; /* Dark border */
+  border-radius: 50%;
+}
+
+/* Bet Buttons Styles */
+#betButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.betButton {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #28a745; /* Green border */
+  border-radius: 5px;
+  background-color: #28a745; /* Green background */
+  color: #fff; /* White text */
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.betButton:hover {
+  background-color: #218838; /* Darker green on hover */
+  border-color: #218838; /* Darker green border on hover */
+}
+
+/* Bet Amount Styles */
+#betAmount {
+  padding: 10px; /* Add padding */
+  font-size: 16px; /* Set font size */
+  border: 2px solid #007bff; /* Blue border */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center; /* Center the text */
+  outline: none; /* Remove outline */
+  transition: border-color 0.3s; /* Smooth border color transition */
+}
+
+#betAmount:focus {
+  border-color: #0056b3; /* Darker blue when focused */
+}
+
+#enableButton {
+  padding: 10px 20px; /* Add padding */
+  font-size: 16px; /* Set font size */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  background-color: #007bff; /* Blue background */
+  color: #fff; /* White text */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+#enableButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Credit Styles */
+#credit {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+  color: #6c757d; /* Dark gray text */
+  font-weight: bold; /* Bold text */
+  border: 2px solid #6c757d; /* Dark gray border */
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px 20px; /* Add padding */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+}
+
+
+/* Timer Styles */
+#timers {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+/* Betting Time Styles */
+#betTimer {
+  font-size: 24px; /* Increase font size */
+  color: #218838; /* Dark green color */
+  font-weight: bold; /* Bold text */
+}
+
+/* Game Time Styles */
+#gameTimer {
+  font-size: 24px; /* Increase font size */
+  color: #c82333; /* Dark red color */
+  font-weight: bold; /* Bold text */
+}
+
+
+/* Result Styles */
+#result {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+/* Results Styles */
+#results {
+  margin-top: 20px;
+}
+
+#resultsList {
+  list-style-type: none;
+  padding: 0;
+}
+
+#resultsList li {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #6c757d; /* Dark gray text */
+}
